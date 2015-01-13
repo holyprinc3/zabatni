@@ -1,0 +1,75 @@
+/* Empty. Add your own CSS if you like */
+.footertab{
+	background-color: #333333;
+}
+
+.category{
+	    display: inline;
+
+}
+.catimg{
+	width:100%;
+}
+.headerbuttons{
+    outline:none;
+    border:0;
+    background-color: #333;
+
+}
+.col{
+
+		    width:33.33333333%;
+
+}
+.categorytitle{
+	text-align: center;
+	color:#ffffff;
+}
+.buttonicon{
+	  background: url("search.png") no-repeat scroll 0 0 transparent;
+
+}
+.custom.pane{
+}
+
+.pane{
+	background: url('back.jpg') no-repeat right ;
+	   background-attachment: fixed;
+	   background-size: cover;  
+	 background-color: #368DD0;
+
+}
+
+
+.myfooter{
+	background-color: #333333;
+	color:#FFFFFF;
+
+}
+.myfootericon{
+	background-image: url("img/iconsbar/home.svg");
+}
+
+
+a:link{
+	text-decoration: none;
+}
+
+.catitemdisc{
+	color:red;
+}
+.item-content{
+	  white-space: normal !important;
+
+}
+
+.offerdetails{
+	font-size:7pt;
+}
+
+.full-image{
+	 border-style: solid;
+    border-bottom: thick solid #333;
+        border-bottom-width: 0.65em;
+
+}

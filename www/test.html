@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head dir="rtl">
+    <title>Back Button Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/itemcss/style.css" rel="stylesheet">
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script>
+<script type="text/javascript">
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+         $ionicPlatform.registerBackButtonAction(function (event) {
+    // Custom function
+  }, 100);
+         }
+    </script>
+  </head>
+  <body onload="onLoad()" ng-app="starter">
+ <ion-pane >
+    <ion-header-bar align-title="left" class="bar-stable bar-dark">
+  <h1 class="title"><img class="title-image" src="img/logo-no-r.png" height="100%" /></h1>
+  <div class="buttons headerbuttons">
+  <ul style="background-color:#333;">
+<li class="button ion-search" style=" border: none; border-color: transparent; background-color:#333;font-size:2em;"></li>
+<li class="button ion-gear-b" style=" border: none; border-color: transparent; background-color:#333;font-size:2em;"></li>
+<li class="button ion-navicon-round" style=" border: none; border-color: transparent; background-color:#333;font-size:2em;"></li>
+
+  </ul>
+
+  </div>
+      </ion-header-bar>
+
+
+      <ion-content class="content"  scrollbar-y="false">
+
+      <div class="list card offerdetails">
+
+  <div class="item item-body"  style="width:100%;  padding: 0 !important; outline-style:none;">
+
+    <img class="full-image" src="img/offer1.jpg">
+  </div>
+  <div class="item item-avatar offerdetails"  align="right" >
+     <img id="badgeimg" src="img/mac.png" style="float:right;position:static;">
+       <h2 lang="ar">تظبيطة كلمة</h2><br/>
+       <p lang="ar" class="item-content"><i class="icon-desc "></i>معلومات عن هذا العرض ساري لفترة محدودة</p>
+      <p lang="ar"  class="item-content"><i class="icon-address"></i>العنوان 4 شارع 9 المعادي</p>
+       <p lang="ar"  class="item-content"><i class="icon-date"></i>ساري حتي 20/4</p>
+
+  </div>
+  <div class="item item-avatar">
+   <div class="row">
+      <div class="col "><i class="icon-fav-after" style="color:#ff69b4; font-size:2em;"></i></div>
+      <div class="col "><i class="icon-social" onClick="share()" style="font-size:2em;"></i></div>
+      <div class="col "><a href="map.html"><i class="icon-locate"  style="color:blue;font-size:2em;"></i></a></div>
+      <div class="col "><i class="icon-green-timer"style="color:green;font-size:2em;"></i></div>
+      <div class="col col-50" style="margin-left:0px; padding-left:0px;"><p style="color:green;font-size:2em;" lang="ar">تظبيطة مستنياك</p></div>
+
+</div>
+<div class="row"><div class="col" style="color:green;">15-12-2014</div></div>
+  </div>
+</div>
+        </ion-content>
+
+
+
+<div class="tabs tabs-icon-only myfooter">
+   <a nav-transition="ios" class="tab-item">
+    <i class="icon ion-email"></i>
+  </a>
+  <a nav-transition="ios" class="tab-item">
+    <i class="icon ion-person-stalker"></i>
+  </a>
+  <a nav-transition="ios" class="tab-item" href="index.html">
+    <i class="icon ion-home"></i>
+  </a>
+</div>
+
+    </ion-pane>
+  </body>
+</html>

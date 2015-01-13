@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-egld8l');
+	src:url('fonts/icomoon.eot?#iefix-egld8l') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-egld8l') format('woff'),
+		url('fonts/icomoon.ttf?-egld8l') format('truetype'),
+		url('fonts/icomoon.svg?-egld8l#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fav-after:before {
+	content: "\e608";
+}
+.icon-green-timer:before {
+	content: "\e609";
+}
+.icon-home:before {
+	content: "\e605";
+}
+.icon-search:before {
+	content: "\e606";
+}
+.icon-settings:before {
+	content: "\e607";
+}
+.icon-address:before {
+	content: "\e600";
+}
+.icon-date:before {
+	content: "\e601";
+}
+.icon-desc:before {
+	content: "\e602";
+}
+.icon-locate:before {
+	content: "\e603";
+}
+.icon-social:before {
+	content: "\e604";
+}
