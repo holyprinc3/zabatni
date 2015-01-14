@@ -16,5 +16,23 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+  
+  // back event
+  $ionicPlatform.registerBackButtonAction(function() {
+		onBackKeyDown();
+	}, 100);
 })
 
+function onBackKeyDown() {
+	navigator.notification.confirm(
+		'Sure to Exit?', 
+		 function(btnIndex){
+			if(btnIndex==1){
+				//e.preventDefault();
+				navigator.app.exitApp();
+			}
+		},
+		'Exit',
+		['Yes','No']
+	);
+}
